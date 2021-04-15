@@ -11,8 +11,8 @@ from pygame import mixer
 
 mixer.init()
 sound = mixer.Sound('alarm.wav')
-leye = cv2.CascadeClassifier('haar cascade files/haarcascade_lefteye_2splits.xml')
-reye = cv2.CascadeClassifier('haar cascade files/haarcascade_righteye_2splits.xml')
+leye = cv2.CascadeClassifier('haar_cascade_files/haarcascade_lefteye_2splits.xml')
+reye = cv2.CascadeClassifier('haar_cascade_files/haarcascade_righteye_2splits.xml')
 lbl=['Close','Open']
 sound2= mixer.Sound("yawn_sound.wav")
 model = load_model('models/cnn_drowsiness.h5')
